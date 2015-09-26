@@ -84,7 +84,7 @@
                 NSString *city = [establishmentLocation valueForKey:@"city"];
                 NSString *state = [establishmentLocation valueForKey:@"state"];
                 
-                NSString *distance = [venueLocation valueForKey:@"distance"];   // get the distance
+                NSString *distance = [establishmentLocation valueForKey:@"distance"];   // get the distance
                 
                 // convert string into double to calculate miles
                 double distanceConvertedToDouble = [distance doubleValue];
