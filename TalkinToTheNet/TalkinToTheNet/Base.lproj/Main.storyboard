@@ -30,15 +30,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl2-mw-m8u">
-                                <rect key="frame" x="287" y="381" width="36" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7G-fq-vTS">
                                 <rect key="frame" x="20" y="318" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl2-mw-m8u">
+                                <rect key="frame" x="282" y="379" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -46,7 +46,7 @@
                         <constraints>
                             <constraint firstItem="M80-Zo-O00" firstAttribute="leading" secondItem="FWa-v4-mIC" secondAttribute="leadingMargin" id="4Dj-Su-gg5"/>
                             <constraint firstItem="M80-Zo-O00" firstAttribute="centerY" secondItem="FWa-v4-mIC" secondAttribute="centerY" id="ElX-KF-nGZ"/>
-                            <constraint firstItem="tl2-mw-m8u" firstAttribute="centerX" secondItem="FWa-v4-mIC" secondAttribute="centerX" constant="4.5" id="F1p-xE-V9g"/>
+                            <constraint firstItem="tl2-mw-m8u" firstAttribute="centerX" secondItem="FWa-v4-mIC" secondAttribute="centerX" id="F1p-xE-V9g"/>
                             <constraint firstItem="kKv-Ow-yan" firstAttribute="top" secondItem="y7G-fq-vTS" secondAttribute="bottom" constant="11" id="HPw-n1-pcD"/>
                             <constraint firstItem="M80-Zo-O00" firstAttribute="trailing" secondItem="FWa-v4-mIC" secondAttribute="trailingMargin" id="Q1X-XJ-EdS"/>
                             <constraint firstItem="kKv-Ow-yan" firstAttribute="centerX" secondItem="FWa-v4-mIC" secondAttribute="centerX" id="Q2M-Ru-Z83"/>
@@ -55,7 +55,7 @@
                             <constraint firstItem="y7G-fq-vTS" firstAttribute="top" secondItem="M80-Zo-O00" secondAttribute="bottom" constant="8" id="fhI-Eo-lmy"/>
                             <constraint firstItem="kKv-Ow-yan" firstAttribute="width" secondItem="y7G-fq-vTS" secondAttribute="width" id="hxg-w1-Lup"/>
                             <constraint firstItem="M80-Zo-O00" firstAttribute="centerX" secondItem="FWa-v4-mIC" secondAttribute="centerX" id="s6Y-v6-ok1"/>
-                            <constraint firstItem="tl2-mw-m8u" firstAttribute="top" secondItem="kKv-Ow-yan" secondAttribute="bottom" constant="10" id="uOO-mF-oDy"/>
+                            <constraint firstItem="tl2-mw-m8u" firstAttribute="top" secondItem="kKv-Ow-yan" secondAttribute="bottom" constant="8" id="uOO-mF-oDy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="385" y="396"/>
         </scene>
-        <!--Location View Controller-->
+        <!--Location Finder View Controller-->
         <scene sceneID="FQE-4l-eBJ">
             <objects>
-                <viewController id="6ut-OH-yi6" customClass="LocationViewController" sceneMemberID="viewController">
+                <viewController id="6ut-OH-yi6" customClass="LocationFinderViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XvQ-db-6iU"/>
                         <viewControllerLayoutGuide type="bottom" id="UFb-Nf-abl"/>
@@ -105,7 +105,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Is My App's Title! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wT1-as-oJr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Stuff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wT1-as-oJr">
                                         <rect key="frame" x="15" y="60" width="570" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -170,8 +170,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="M0G-L1-xTp"/>
                     <connections>
-                        <outlet property="listTableView" destination="YTP-MI-rtm" id="Tbf-ZY-tle"/>
-                        <outlet property="searchTextField" destination="v4C-rl-PQs" id="g4M-xb-MAe"/>
+                        <outlet property="listTableView" destination="YTP-MI-rtm" id="1RU-Jb-AIL"/>
+                        <outlet property="searchTextField" destination="v4C-rl-PQs" id="Tsa-le-uDl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XlU-1w-Abm" sceneMemberID="firstResponder"/>

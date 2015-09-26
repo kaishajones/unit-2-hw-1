@@ -163,7 +163,7 @@
     NSIndexPath *myIndexPath = [self.listTableView indexPathForSelectedRow];
     FourSquareSearchResult *dataTransfer = self.searchResults[myIndexPath.row];
     DetailViewController *dvc = segue.destinationViewController; // reference to detail view controller
-    dvc.dataPassed = dataTransfer;
+    dvc.dataTransfered = dataTransfer;
 }
 
 @end
